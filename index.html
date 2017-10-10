@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Area of a Circle</title>
+	<link rel="stylesheet" href="styles/main.css" type="text/css">
+	<script type="text/javascript" src="script/calculations.js"></script>
+</head>
+<body>
+<div class="banner">
+	<h1 id="header">Area of a Circle</h1>
+</div>
+
+<form name="CircleACForm" id="CircleACForm" action="javascript:ComputeAreaCircle(document.getElementById('radiusInput').value);">
+	Radius: <input type = "text" id="radiusInput" name="radius" value="" >
+	Result: <input type = "text" id="resultDisplayArea" name="result" value="" disabled>
+			
+	<!--	<input type = "reset" value="Reset"> -->
+	<!--	<input type = "button" value="Reset" onClick="this.form.reset()"> -->
+			<input type = "button" value="Reset" onClick="ResetFormContents()">
+			<input type = "submit" value="Compute" >
+</form>
+</body>
+</html>
